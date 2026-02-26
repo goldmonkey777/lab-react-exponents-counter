@@ -1,7 +1,7 @@
-const ExponentThree = () => (
-   <div className="exponent-counter-container">
+const ExponentThree = ({ num }) => (
+  <div className="exponent-counter-container">
     <p className="exponent-label">n³</p>
-    <p className="exponent-result">2 * 2 * 2 = <span className="total">8</span></p>
+    <p className="exponent-result">{num} * {num} * {num} = <span className="total">{num ** 3}</span></p>
   </div>
 );
 
